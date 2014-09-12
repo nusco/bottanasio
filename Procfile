@@ -1,1 +1,1 @@
-web: bin/hubot --adapter slack --name Bottanasio
+web: bin/hubot --adapter slack --name Hubot
