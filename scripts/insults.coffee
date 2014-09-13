@@ -1,4 +1,10 @@
-randomResponse = () ->
+# Description:
+#   Insult the bot.
+#
+# Commands:
+#   hubot, suca - Say "Thank you"
+
+randomInsultResponse = () ->
 	responses = ['vi amo.',
 							 'sono il vs. umile servitore'
 							 'vorrei leccare i vostri tacchi a spillo'
@@ -16,5 +22,5 @@ randomResponse = () ->
 	responses[Math.floor(Math.random() * responses.length)]
 
 module.exports = (robot) ->
-  robot.respond /suca|puppa|vaffanculo|fottiti/i, (msg) ->
-    msg.send randomResponse()
+  robot.respond /suca|puppa|vaffanculo|fottiti|fuck/i, (msg) ->
+    msg.send randomInsultResponse()
